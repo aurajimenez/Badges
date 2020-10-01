@@ -14,7 +14,7 @@ class Badge extends React.Component {
         <div className="Badge__section-name">
           <img
             className="Badge__avatar"
-            src={this.props.avatar}
+            src={this.props.avatarUrl}
             alt="Avatar"
           />
           <h1>
@@ -23,8 +23,8 @@ class Badge extends React.Component {
         </div>
 
         <div className="Badge__section-info">
-          <h3>{this.props.jobtitle}</h3>
-          <div>@sparragus</div>
+          <h3>{this.props.jobTitle}</h3>
+          <div>@{this.props.twitter}</div>
         </div>
 
         <div className="Badge__footer">#platziconf</div>
